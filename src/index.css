@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+/* Ripplyn palette — the only colors the tool uses */
+@theme {
+  --color-slate: #556b80;
+  --color-off: #fbfaf7;
+  --color-deep: #181d21;
+  --color-signal: #489fc6;
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* HeroUI theme mapped onto the palette */
+:root,
+.light,
+[data-theme="light"] {
+  --accent: #489fc6;
+  --accent-foreground: #fbfaf7;
+  --background: #fbfaf7;
+  --foreground: #181d21;
+  --surface: #fbfaf7;
+  --surface-foreground: #181d21;
+  --surface-secondary: color-mix(in oklab, #556b80 7%, #fbfaf7);
+  --surface-tertiary: color-mix(in oklab, #556b80 12%, #fbfaf7);
+  --overlay: #fbfaf7;
+  --overlay-foreground: #181d21;
+  --muted: #556b80;
+  --default: color-mix(in oklab, #556b80 10%, #fbfaf7);
+  --default-foreground: #181d21;
+  --field-background: color-mix(in oklab, #556b80 6%, #fbfaf7);
+  --field-foreground: #181d21;
+  --border: color-mix(in oklab, #556b80 22%, #fbfaf7);
+  --separator: color-mix(in oklab, #556b80 16%, #fbfaf7);
+  --focus: #489fc6;
+  --segment: #fbfaf7;
+  --segment-foreground: #181d21;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-off);
+  color: var(--color-deep);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.checker {
+  background-color: color-mix(in oklab, #556b80 8%, #fbfaf7);
+}
