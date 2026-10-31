@@ -2,7 +2,7 @@
 
 Генератор фирменной графики Ripplyn на приёме «разрез, сдвиг, волна».
 
-**Сайт:** https://noktt.github.io/ripplyn-ripple/ <!-- обновляется при деплое -->
+**Сайт:** https://nokttsu.github.io/ripplyn-ripple/
 
 ## Приём
 
